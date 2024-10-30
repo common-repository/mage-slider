@@ -1,0 +1,201 @@
+.mps_slider {
+	display: block;
+	float: none;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.mps_slider .mps_slider_list {
+	float: none;
+	position: relative;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+.mps_slider .mps_slider_item {
+	position: relative;
+	float: none;
+	width: 100%;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+.mps_slider .mps_slider_item a {
+	text-decoration: none;
+}
+.mps_slider .slider_buttons {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.mps_slider .sb_inner {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.sb_center {
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+}
+.mps_slider .sb_item {
+	position: relative;
+	float: none;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	/*background:url("../images/slider_line.png") no-repeat bottom center;*/
+}
+.mps_slider .sb_item:last-child {
+	background: none;
+	padding-bottom: 0;
+}
+.mps_slider .sb_item:first-child {
+	background: none;
+}
+.mps_slider .sb_item.active {}
+.mps_slider .sb_item b {
+	position: relative;
+	float: none;
+	width: 100%;
+	padding: 0 25% 0 25%;
+	font-size: 25px;
+	color: rgba(255, 255, 255, 0.5);
+	font-weight: normal;
+	cursor: pointer;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.mps_slider .sb_item.active b {
+	visibility: visible;
+	font-size: 25px;
+	width: 100%;
+	padding: 0;
+	color: rgba(255, 255, 255, 1);
+	text-transform: uppercase;
+	cursor: default;
+}
+.mps_slider .sb_item span {
+	display: none;
+	position: relative;
+	float: none;
+	margin: 5px 0px 0px 0;
+	width: 100%;
+	font-size: 16px;
+	color: #fff;
+}
+.mps_slider .sb_item.active span {
+	display: block;
+}
+.mps_slider .sb_item:first-child span {
+	display: block;
+}
+.mps_slider .sb_item u {
+	opacity: 0;
+	position: relative;
+	overflow: hidden;
+	float: none;
+	height: 0px;
+	width: 100%;
+	text-decoration: none;
+	-webkit-transition: opacity 0.2s ease, height 0.2s linear;
+	-moz-transition: opacity 0.2s ease, height 0.2s linear;
+	-o-transition: opacity 0.2s ease, height 0.2s linear;
+	transition: opacity 0.2s ease, height 0.2s linear;
+}
+.mps_slider .sb_item.active u {
+	opacity: 1;
+	height: 70px;
+	-webkit-transition: opacity 0.4s ease 0.2s, height 0.2s linear;
+	-moz-transition: opacity 0.4s ease 0.2s, height 0.2s linear;
+	-o-transition: opacity 0.4s ease 0.2s, height 0.2s linear;
+	transition: opacity 0.4s ease 0.2s, height 0.2s linear;
+}
+.mps_slider .sb_item a {
+	display: inline-block;
+	width: 249px;
+	height: 44px;
+	margin: 10px 0 10px 0;
+	color: #fff;
+	border: 3px solid #e3b30b;
+	background-color: rgba(253, 174, 11, 0.3);
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 44px;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.mps_slider .sb_item a:hover {
+	background-color: rgba(253, 174, 11, 1);
+}
+.sb_inner {
+	display: block!important;
+	float: none;
+	margin: 12% auto 0;
+	overflow: hidden;
+	width: 100%;
+}
+.sb_item p {
+	display: none;
+}
+.sb_item.active p {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 20px;
+}
+@media (max-width: 1280px) {
+	.mps_slider .sb_item b {
+		font-size: 20px
+	}
+	.mps_slider .sb_item.active b {
+		font-size: 28px;
+	}
+	.mps_slider .sb_item {
+		padding-bottom: 40px;
+	}
+	.mps_slider .sb_item a {
+		height: 38px;
+		line-height: 38px;
+	}
+}
+@media (max-width: 1050px) {}
+@media (max-width: 950px) {
+	.mps_slider .sb_item {
+		/*width: 76%;
+			padding-left:12%;
+			padding-right:12%;*/
+	}
+	.mps_slider .sb_item {
+		padding-bottom: 10px;
+	}
+	.mps_slider .sb_item.active {
+		width: 100% !important;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.mps_slider .sb_item.active b {
+		font-size: 16px !important;
+		padding-bottom: 0px;
+	}
+	.mps_slider .sb_item span {
+		display: block !important;
+	}
+	.mps_slider .sb_item b {
+		font-size: 15px !important;
+		padding: 0 !important;
+		width: 100% !important;
+	}
+}
+@media (max-width: 450px) {}
